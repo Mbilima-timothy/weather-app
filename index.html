@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Province | Weather Watching</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="nav">
+      <div class="logo">
+        <i class="fa fa-cloud"></i>
+        Central Province | Weather Watching
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="http://www.icuzambia.net">ICU Zambia</a></li>
+          <li><a href="https://www.zrdc.org">ZRDC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h1>
+        <br>
+        Weather Watching
+      </h1>
+      <p class="tag">Easily Check Whether Anywhere!</p>
+      <div class="search">
+  
+        <input type="search" id="cityInput" placeholder="Enter City Name">
+        <button onclick="getCitySuggestions()" class="active"><i class="fa fa-search"></i> Search by City</button>
+  
+        <button onclick="getUserLocation()"> <i class="fa fa-map-marker"></i> Use My Location</button>
+      </div>
+  
+      <div id="citySuggestions"></div>
+  
+      <div id="weatherInfo"></div>
+    </div>
+    <footer>
+      <div class="base">
+        <p><span class="copyright">Central Province. All Rights Reserved </span></p>
+        <p>Designed and Maintained By Timonthy Mbilima, SIN: 2310485951</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
